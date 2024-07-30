@@ -1,14 +1,16 @@
 document.getElementById('language-toggle').addEventListener('click', function() {
-    const englishText = document.querySelector('p[data-language="en"]');
-    const irishText = document.querySelector('p[data-language="ga"]');
+    const englishText = document.querySelectorAll('p[data-language="en"]');
+    const irishText = document.querySelectorAll('p[data-language="ga"]');
     
-    if (englishText.style.display === 'none') {
-        englishText.style.display = 'block';
-        irishText.style.display = 'none';
+	for(i=0;i<englishText.length;++i) {
+    if (englishText[i].style.display === 'none') {
+        englishText[i].style.display = 'block';
+        irishText[i].style.display = 'none';
         this.textContent = 'Gaeilge';
     } else {
-        englishText.style.display = 'none';
-        irishText.style.display = 'block';
+        englishText[i].style.display = 'none';
+        irishText[i].style.display = 'block';
         this.textContent = 'English';
     }
+}
 });
