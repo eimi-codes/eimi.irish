@@ -1,0 +1,83 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #009a49; 
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 2em;
+    color: #cf3476; 
+}
+
+button#language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #350cda; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button#social-link {
+    background-color: #350cda; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section#description {
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section#social {
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section#footer {
+    background-color: #cf3476;
+    color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section#description {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    section#description {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+}
